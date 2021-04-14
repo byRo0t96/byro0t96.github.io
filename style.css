@@ -1,0 +1,487 @@
+/* Header */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,700,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+.btn-outline {
+  background-color: transparent;
+  color: #5cb85c;
+  border-color: #5cb85c;
+  font-size: 0.35em;
+}
+.btn-success.btn-outline:hover,
+.btn-success.btn-outline:focus,
+.btn-success.btn-outline:active {
+  background-color: transparent;
+  color: #5cb85c;
+  border-color: #5cb85c;
+  outline: inherit;
+  box-shadow: none;
+}
+.hiretip + .tooltip > .tooltip-inner {
+  max-width: 500px;
+  background-color: transparent;
+  color: #5cb85c;
+  border: 1px solid;
+  font-family: Josefin Sans;
+  font-size: 1.15em;
+}
+
+.hiretip + .tooltip > .tooltip-arrow {
+  border-bottom-color:transparent;
+}
+.header {
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.header span {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  -webkit-transform:translate(-50%, -50%);
+  font-size: 4em;
+  font-family: Josefin Sans;
+  font-weight: 300;
+}
+.header p {
+  text-transform: lowercase;
+  font-size: 0.45em;
+  font-family: Josefin Sans;
+  font-weight: 300;
+}
+.modal {
+  text-align: center;
+  color: #ffffff;
+  font-family: Josefin Sans;
+  z-index: 1100;
+}
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+.modal-content {
+  text-align: left;
+  background-color: #5cb85c;
+  border: none;
+  box-shadow: none;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.modal-header {
+  text-align: center;
+  border: none;
+}
+.modal-footer {
+  border: none;
+  font-size: 3em;
+}
+.modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.modal-footer .btn-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.modal-footer .btn-success.btn-outline:hover,
+.modal-footer .btn-success.btn-outline:focus,
+.modal-footer .btn-success.btn-outline:active {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  outline: inherit;
+  box-shadow: none;
+}
+label {
+  padding-top: 0.6em;
+  padding-left: 0.6em;
+  font-weight: 300;
+}
+.input-lg {
+  border-radius: 4px;
+  font-size: 0.65em;
+}
+/* End Of Header */
+
+/* Approach */
+.approach {
+  margin-bottom: 100px;
+}
+.apptitle {
+  border-bottom: 1px solid #5cb85c;
+  margin-bottom: 20px;
+  font-family: Josefin Sans;
+}
+.apptitle h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4em;
+}
+.apptitle p {
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+.col-md-4 {
+  padding: 0;
+}
+.appall img {
+  width: 100%;
+  top:0;
+}
+.appwrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.5s ease-in-out;
+}
+.apptext {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.apptext h3 {
+    font-size: 4em;
+    font-family: Josefin Sans;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 0 30px rgba(200, 200, 200, 1);
+}
+.apphovertext {
+  opacity: 0;
+  visibility: hidden;;
+  font-family: Josefin Sans;
+  font-size: 1.2em;
+  text-align: center;
+  position: absolute;
+  -webkit-transform: translateY(-35%);
+  -ms-transform: translateY(-35%);
+  transform: translateY(-35%);
+  width: 100%;
+  top: 50%;
+  padding: 40% 10% 0 10%;
+}
+.appwrap:hover,
+.appwrap:focus {
+  background-color: rgba(250, 250, 250, 0.9);
+  color: #000;
+}
+.appwrap:hover > .apptext,
+.appwrap:focus > .apptext {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  top: 30%;
+}
+.appwrap:hover > .apptext h3,
+.appwrap:focus > .apptext h3 {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  color: #000;
+}
+.appwrap:hover > .apphovertext,
+.appwrap:focus > .apphovertext {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* End Of Approach */
+
+/* Who.Am.I*/
+.whoimg {
+  background-image: url(http://ikovalenko.com/img/photo.jpg);
+  max-width: 100%;
+  width: 80%;
+  height:auto;
+  display:block;
+  padding-top: 80%;
+  border-radius:50%;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.whoabout {
+  display: block;
+  justify-content:center;
+  align-items:center;
+  font-family: Josefin Sans;
+}
+.whoabout h3 {
+  font-weight: 400;
+  font-size: 3.8em;
+}
+.whoabout p {
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-weight: 300;
+}
+@media all and (min-width: 1200px) {
+    .whoabout p {
+        font-size: 1.6em;
+        width: 60%;
+        }
+    }
+@media all and (max-width: 1199px) {
+    .whoabout p {
+        font-size: 1.3em;
+        width: 60%;
+    }
+}
+@media all and (max-width: 991px) {
+    .whoabout p {
+        font-size: 1.5em;
+        width: 100%;
+        }
+    }
+@media all and (max-width: 500px) {
+    .whoabout p {
+        font-size: 1.4em;
+        width: 100%;
+        }
+    }
+/*End Of Who.Am.I*/
+
+/* Skills */
+.progress {
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid #5cb85c;
+  box-shadow: none;
+  background-color: #fff;
+  font-family: Josefin Sans;
+  font-weight: 300;
+}
+.progress-bar {
+  box-shadow: none;
+
+  text-align: left;
+}
+.skilltitle {
+  padding-left: 70px;
+  font-size: 3em;
+  line-height: 1.5em;
+}
+.label {
+  width: 110px;
+  line-height: 1.4em;
+  font-weight: 300;
+  font-size: 2em;
+  border-radius: 0;
+  float: right;
+  height: 100%;
+}
+.prc {
+  padding-left: 20px;
+  font-size: 3em;
+}
+.learn {
+  color: #5cb85c;
+}
+@media all and (max-width: 991px) {
+  .progress {
+    height: 50px;
+  }
+  .skilltitle {
+    padding-left: 20px;
+  }
+  .prc {
+    padding-left: 8px;
+  }
+}
+@media all and (max-width: 700px) {
+  .progress {
+    height: 40px;
+  }
+  .skilltitle {
+    padding-left: 40px;
+    font-size: 1.5em;
+    line-height: 2.3em;
+  }
+  .label {
+    width: 70px;
+    line-height: 2.2em;
+    font-weight: 300;
+    font-size: 1.2em;
+    border-radius: 0;
+    float: right;
+    height: 100%;
+  }
+  .prc {
+    padding-left: 3px;
+    font-size: 1.5em;
+  }
+}
+@media all and (max-width: 450px) {
+  .progress {
+    height: 40px;
+  }
+  .skilltitle {
+    padding-left: 15px;
+    font-size: 1.5em;
+    line-height: 2.3em;
+  }
+  .label {
+    width: 70px;
+    line-height: 2.2em;
+    font-weight: 300;
+    font-size: 1.2em;
+    border-radius: 0;
+    float: right;
+    height: 100%;
+  }
+  .prc {
+    padding-left: 3px;
+    font-size: 1.5em;
+  }
+}
+/* End Of Skills */
+
+/* Footer */
+.apptitlef {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: Josefin Sans;
+}
+.apptitlef h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5em;
+}
+.apptitlef p {
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+.contact {
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 1.6em;
+  color: #fff;
+  margin-bottom: 30px;
+}
+a[href^="tel"] {
+    color:inherit;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    text-decoration:none;
+}
+.contact i,
+.contact i:hover {
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 1em !important;
+  margin: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.copyright {
+  font-family: Josefin Sans;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #fff;
+  margin-top: 20px;
+}
+#footer {
+  height: auto;
+  margin-top: 50px;
+  background-color: #5cb85c;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+.social {
+  position: static;
+  bottom: 0;
+  width: inherit;
+}
+#footer i,
+#footer em {
+  color: #fff;
+  font-size: 3em;
+  margin-right: 0.5em;
+  border: 2px solid #fff;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 100px;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+#footer i:hover,
+#footer em:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #5cb85c;
+  font-size: 3em;
+  margin-right: 0.5em;
+  border: 2px solid #fff;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 100px;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+/* End Of Footer */
+
+/* Back To Top */
+
+a#back-to-top.back-to-top {
+  color: #fff;
+  background-color: #5cb85c;
+  border: 1px solid #fff;
+  border-bottom: none;
+  border-radius: 0;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  display:none;
+}
+a#back-to-top.btn.focus,
+a#back-to-top.btn:focus,
+a#back-to-top.btn:hover,
+a#back-to-top.btn.active,
+a#back-to-top.btn:active {
+  box-shadow: none;
+  color: #fff;
+  text-decoration: none;
+}
+/* End Of Back To Top*/

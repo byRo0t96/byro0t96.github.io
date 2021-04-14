@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Portfolio Page</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body ontouchstart="">
+  <noscript>
+   For full functionality of this site it is necessary to enable JavaScript.
+   Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+   instructions how to enable JavaScript in your web browser</a>.
+  </noscript>
+  <header>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="myModalLabel">Work Inquiry</h2>
+          </div>
+          <div id="form-messages"></div>
+          <form id="ajax-contact" method="post" action="send.php">
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="control-label" for="submithire">From:</label>
+              <input name="mail" type="email" class="form-control input-lg" id="submithire" aria-describedby="helpBlock2" placeholder="Type your e-mail" required>
+              <label class="control-label" for="submithire2">Description:</label>
+              <textarea name="text" class="form-control" rows="4" id="submithire2" placeholder="Explain your project" required></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success btn-block btn-outline">Send</button>
+            <button type="button" class="btn btn-success btn-block btn-outline" data-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div onmouseover="" class="header">
+      <span>iKovalenko<p>Front end web developer</p><div class="hidden-xs hiretip" data-toggle="tooltip" data-placement="bottom" title="Click here to send me project description" data-trigger="hover"><button type="button" class="btn btn-success btn-block btn-outline" data-toggle="modal" data-target="#myModal">Hire Me</button></div><button type="button" class="btn btn-success btn-block btn-outline visible-xs" data-toggle="modal" data-target="#myModal">Hire Me</button></span>
+    </div>
+  </header>
+  <div class="approach">
+    <div class="container">
+      <div class="apptitle text-center">
+        <h2>approach</h2>
+        <p>I don’t just take your order and serve you a website or mobile app, I take the time to get to know you and understand your needs and objectives. my goal is to provide innovative, highly functional, visually appealing and feature-rich websites and mobile applications</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="appall">
+            <div class="appwrap">
+              <div class="apptext"><h3>Strategy</h3></div>
+              <div class="apphovertext">I am not simply designing a user interface that looks good and is usable and accessible. I`m designing an interface that will help you accomplish your organization’s objectives.</div>
+            </div>
+            <img src="http://ikovalenko.com/img/strategy.jpg" alt="Strategy">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="appall">
+            <div class="appwrap">
+              <div class="apptext"><h3>Creative</h3></div>
+              <div class="apphovertext">My creative juices are always overflowing. I stir up innovation with creative artistry, vision, flair and functionality that reflects your image and brand.</div>
+            </div>
+            <img src="http://ikovalenko.com/img/creative.jpg" alt="Creative">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="appall">
+            <div class="appwrap">
+              <div class="apptext"><h3>Technology</h3></div>
+              <div class="apphovertext">Web and mobile technology is constantly evolving. I`m constantly researching and exploring new and innovative ways to develop websites and mobile apps.</div>
+            </div>
+            <img src="http://ikovalenko.com/img/technology.jpg" alt="Technology">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="whoiam">
+    <div class="container">
+      <div class="apptitle text-center">
+        <h2>who . am . i</h2>
+        <p>I'll be quick. Since graduating from university, I have been working full time as a professional front-end web developer. I specialize in crafting beautiful websites from scratch. I like to produce work that I can be proud of. Work which is beautiful on the inside as well as out. I'm not interested in churning out crap to make a quick buck. I'm interested in ensuring that my clients get the best possible value for their investment. I'm strongly focused on modularity and maintainability and I pay great attention to details.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6"> <div class="whoimg"></div></div>
+        <div class="col-md-6 text-center whoabout">
+          <h3>Igor Kovalenko</h3>
+          <p>Front End Developer based in Kiev, UA.</p>
+          <p>I am able to work effectively in a team or on my Own. I have demonstrated an ability to lead small Teams and mentor other workers. I pride myself on being able to use my knowledge and initiative to deliver high quality results to tight deadlines. I enjoy a challenge and look for the opportunity to expand and develop my skill set.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="skills">
+    <div class="container">
+      <div class="apptitle text-center">
+        <h2>my . skills</h2>
+        <p></p>
+      </div>
+      <div class="progress">
+        <span class="label label-success">Middle</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+          <span class="prc">70%</span><span class="skilltitle">HTML5</span>
+        </div>
+      </div>
+      <div class="progress">
+        <span class="label label-success">Middle</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+          <span class="prc">55%</span><span class="skilltitle">CSS3</span>
+        </div>
+      </div>
+      <div class="progress">
+        <span class="label label-success">Middle</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+          <span class="prc">60%</span><span class="skilltitle">Bootstrap</span>
+        </div>
+      </div>
+      <div class="progress">
+        <span class="label label-success">Study</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+          <span class="prc">10%</span><span class="skilltitle learn">JavaScript</span>
+        </div>
+      </div>
+      <div class="progress">
+        <span class="label label-success">Junior</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+          <span class="prc">35%</span><span class="skilltitle">WordPress</span>
+        </div>
+      </div>
+      <div class="progress">
+        <span class="label label-success">Junior</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+          <span class="prc">45%</span><span class="skilltitle">Joomla</span>
+        </div>
+      </div>
+      <div class="progress">
+        <span class="label label-success">Study</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+          <span class="prc">30%</span><span class="skilltitle">Git</span>
+        </div>
+      </div>
+      <div class="progress">
+        <span class="label label-success">Study</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+          <span class="prc">35%</span><span class="skilltitle">SVG</span>
+        </div>
+      </div>
+      <div class="progress">
+        <span class="label label-success">Interm.</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+          <span class="prc">60%</span><span class="skilltitle">English</span>
+        </div>
+      </div>
+      <div class="progress">
+        <span class="label label-success">Middle</span>
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+          <span class="prc">70%</span><span class="skilltitle">Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div id="footer">
+      <div class="container">
+        <div class="apptitlef text-center">
+          <h2>Want . to . work . with . me?</h2>
+          <p></p>
+        </div>
+        <div class="contact">
+          <div class="row">
+          <div class="col-sm-4"><span><i class="fa fa-envelope-o"></i>kov.ig.v@gmail.com</span></div><div class="col-sm-4"><span><i class="fa fa-mobile"></i>+380 67 2397749</span></div><div class="col-sm-4"><span><i class="fa fa-skype"></i>ikovalenko.com</span></div>
+        </div>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/kov.ig.v" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://linkedin.com/in/ig0rk0valenk0" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://twitter.com/ig0rk0valenk0" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://github.com/igor-kovalenko" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://codepen.io/igorkovalenko/" target="_blank"><i class="fa fa-codepen"></i></a>
+        </div>
+        <div class="copyright"><small>© Copyright 2016 Igor Kovalenko personal portfolio</small></div>
+      </div>
+    </div>
+  </footer>
+  <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"  data-placement="top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
