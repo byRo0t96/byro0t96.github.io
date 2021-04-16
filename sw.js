@@ -4,6 +4,7 @@ var CACHE_VERSION='app-v20';var CACHE_FILES=[
       './cli-plugin.min.css',
 	  './index.js',
       './cli-plugin.min.js',
+	  './check_connection.js',
       './script.js',
 	  './favicon.ico',
 	  './Ro0t-96_v.3.1.png',
