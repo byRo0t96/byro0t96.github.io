@@ -8,16 +8,18 @@ var config = {
 // Init
 cliPlugin.init(config);
 
-// Register commands
-cliPlugin.bind('test', function () {
-  cliPlugin.print('test!');
+cliPlugin.print('Write "help" for more information.<br/>');
+
+cliPlugin.bind('clear', function () {
+  cliPlugin.clear();
 });
 
-/*cliPlugin.bind('help', function () {
+cliPlugin.bind('help', function () {
   cliPlugin.print('<p>available commands:</p>');
-  cliPlugin.print('<ul><li><span>about</span> general information</li><li><span>clear</span> clear the screen</li><li><span>sources</span> how this is made</li><br/><li><span>help</span> show this overview</li></ul>');
+  cliPlugin.print('<ul><li><span>clear</span> clear the screen</li><br/><li><span>help</span> show this overview</li></ul>');
 });
 
+/*
 cliPlugin.bind('about', function () {
   cliPlugin.print('<p>This project is a simple and easy to use command-line interface (CLI) for web applications.</p>');
   cliPlugin.print('<p>Inspired by minimalistic user interfaces that are rich in functionality.</p>');
@@ -25,9 +27,7 @@ cliPlugin.bind('about', function () {
   cliPlugin.print('<p>Very light weight.</p>');
 });
 
-cliPlugin.bind('clear', function () {
-  cliPlugin.clear();
-});
+
 
 cliPlugin.bind('sources', function () {
   cliPlugin.print('<p>CLI plugin was made using:</p>');
