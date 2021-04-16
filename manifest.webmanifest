@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "Yasser BDJ - Command Line Interface.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/byRo0t96/byRo0t96/main/images/Ro0t-96_v.3.1.png'",
+      "sizes": "623x623",
+      "type": "image/png"
+    }
+  ],
+  "name": "Yasser BDJ - CLI",
+  "short_name": "Yasser BDJ",
+  "start_url": "./index.html"
+}
