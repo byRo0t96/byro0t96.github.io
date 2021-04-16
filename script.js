@@ -37,8 +37,8 @@ cliPlugin.bind('help', function () {
 
 //about:
 cliPlugin.bind('about', function () {
-  cliPlugin.print('<p>about Yasser BDJ - CLI:</p>');
-  cliPlugin.print('<ul><li><span>clear</span> clear the screen</li><br/><li><span>help</span> show this overview</li></ul>');
+  cliPlugin.print('<p>About Yasser BDJ - CLI:</p>');
+  cliPlugin.print("<p>I'm a web developer & software engineer from Algeria. I love building new and exciting things for computers. When I am not busy working on various projects, you'll find me sleeping or watching movies.<br>I built this simple website with a command line interface to showcase some of my free and open source works.<br>Enjoy! 😊😊</p>");
 });
 /*
 cliPlugin.bind('about', function () {
