@@ -1,10 +1,13 @@
 var CACHE_VERSION='app-v20';var CACHE_FILES=[
       './',
       './index.html',
-      './index.js',
       './cli-plugin.min.css',
+	  './index.js',
       './cli-plugin.min.js',
-      './script.js'
+      './script.js',
+	  './favicon.ico',
+	  './Ro0t-96_v.3.1.png',
+	  
 ];/*s*/
 /*self.addEventListener('install',(e)=>{
   e.waitUntil(

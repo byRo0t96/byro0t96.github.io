@@ -3,14 +3,14 @@ body{
 }
 body::after{
 	content:"";
-	background:url('https://raw.githubusercontent.com/byRo0t96/byRo0t96/main/images/Ro0t-96_v.3.1.png');
+	background:url('./Ro0t-96_v.3.1.png');
 	opacity:0.05;
 	top:0;
 	left:0;
 	bottom:0;
 	right:0;
 	position:absolute;
-	z-index:0;
+	z-index:1;
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:30vh;
@@ -50,7 +50,7 @@ body::after{
 	user-select:none
 }
 .cli-plugin .output{
-	position:absolute;left:45px;right:15px;bottom:30px;overflow:hidden;padding-left:2px
+	position:absolute;left:12px;right:15px;bottom:30px;overflow:hidden;padding-left:2px
 }
 .cli-plugin .output a{
 	color:inherit;text-decoration:none
