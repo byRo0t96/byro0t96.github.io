@@ -1,15 +1,17 @@
 {
-  "background_color": "purple",
-  "description": "Yasser BDJ - Command Line Interface.",
-  "display": "fullscreen",
-  "icons": [
-    {
-      "src": "https://raw.githubusercontent.com/byRo0t96/byRo0t96/main/images/Ro0t-96_v.3.1.png'",
-      "sizes": "623x623",
-      "type": "image/png"
-    }
-  ],
-  "name": "Yasser BDJ - CLI",
-  "short_name": "Yasser BDJ",
-  "start_url": "./index.html"
+    "short_name": "Yasser BDJ - CLI",
+    "name": "Yasser BDJ - CLI",
+    "description": "Yasser BDJ - Command Line Interface.",
+    "start_url": "./",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "icons": [
+        {
+            "src": "./Ro0t-96_v.3.1.png",
+            "type": "image/png",
+            "sizes": "623x623",
+            "purpose": "any maskable"
+        }
+    ]
 }

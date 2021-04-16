@@ -1,11 +1,37 @@
+/*s*/
+/*function loadJSON(callback) {   
+  var xobj = new XMLHttpRequest();
+  xobj.overrideMimeType("application/json");
+  xobj.open('GET','./sw.json',true);
+  xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      callback(JSON.parse(xobj.responseText));
+    }
+  };
+  xobj.send(null);  
+}
+
+var ss=loadJSON(function(json){
+	var data="";
+	for(i=0;i<json.length;i++){
+		if(data==""){var bar='"';}else{var bar=',"';}
+		data+=bar+json[i]+'"';
+	}
+	return;
+});
+console.log(ss);*/
+
 // Register service worker to control making site work offline
 if ('serviceWorker' in navigator){
   navigator.serviceWorker
     .register('./sw.js')
     .then(() => {
+	
 	console.log('Service Worker Registered'); 
 	});
 }
+
+
 var download_pwa = document.getElementsByClassName('download_pwa');
 if (download_pwa.length > 0){
     // Code to handle install prompt on desktop
@@ -38,3 +64,4 @@ window.addEventListener('beforeinstallprompt',(e)=>{
   });
 });
 }
+/*e*/
