@@ -17,7 +17,7 @@ var config={
 cliPlugin.init(config);
 
 //First print:
-cliPlugin.print('Write "help" for more information.<br/>');
+cliPlugin.print('Hi!<br>Welcome to Yasser BDJ - CLI.<br><br>Write "help" for more information.<br><br>');
 
 //Commands:
 //clear:
@@ -26,7 +26,7 @@ cliPlugin.bind('clear',function(){
 });
 
 //help:
-cliPlugin.bind('help', function () {
+cliPlugin.bind('help',function(){
   cliPlugin.print('<p>available commands:</p>');
   cliPlugin.print('<ul>'+
                   '<li><span>clear</span>clear the screen.</li><br>'+
@@ -36,7 +36,7 @@ cliPlugin.bind('help', function () {
 });
 
 //about:
-cliPlugin.bind('about', function () {
+cliPlugin.bind('about',function(){
   cliPlugin.print('<p>About Yasser BDJ - CLI:</p>');
   cliPlugin.print("<p>I'm a web developer & software engineer from Algeria. I love building new and exciting things for computers. When I am not busy working on various projects, you'll find me sleeping or watching movies.<br>I built this simple website with a command line interface to showcase some of my free and open source works.<br>Enjoy! 😊😊</p>");
 });
