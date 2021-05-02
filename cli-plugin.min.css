@@ -25,6 +25,8 @@ body::after{
     padding-right: 10px;
     height: 14px;
     z-index: 5;
+	font-family: monospace;
+    font-size: 12px;
 }
 .version {
     direction: ltr;

@@ -25,13 +25,19 @@ cliPlugin.bind('clear',function(){
   cliPlugin.clear();
 });
 
+//exit:
+cliPlugin.bind('exit',function(){
+  window.close();
+});
+
 //help:
 cliPlugin.bind('help',function(){
   cliPlugin.print('<p>available commands:</p>'+
                   '<ul>'+
                   '<li><span>clear</span>clear the screen.</li><br>'+
-                  '<li><span>help</span>show this overview.</li>'+
-				  '<li><span>about</span>about Me.</li>'+
+                  '<li><span>help</span>Show this overview.</li>'+
+				  '<li><span>about</span>About Me.</li>'+
+				  '<li><span>exit</span>Close this window.</li>'+
 				  '</ul>');
 });
 
@@ -40,6 +46,9 @@ cliPlugin.bind('about',function(){
   cliPlugin.print('<p>About Yasser BDJ - CLI:</p>'+
                   "<p>I'm a web developer & software engineer from Algeria. I love building new and exciting things for computers. When I am not busy working on various projects, you'll find me sleeping or watching movies.<br>I built this simple website with a command line interface to showcase some of my free and open source works.<br>Enjoy! 😊😊</p>");
 });
+
+
+
 /*
 cliPlugin.bind('about', function () {
   cliPlugin.print('<p>This project is a simple and easy to use command-line interface (CLI) for web applications.</p>');
