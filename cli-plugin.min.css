@@ -92,7 +92,7 @@ body::after{
 .cli-plugin .output p{max-width:500px}
 .cli-plugin .output ul{list-style-type:none;padding-left:25px}
 .cli-plugin .output ul li span{display:inline-block;min-width:100px;text-align:left}
-.cli-plugin .input{cursor:none;color:transparent;text-shadow:0 0 0 #111;position:absolute;bottom:15px;left:45px;padding-right:10px;height:14px}
+.cli-plugin .input{cursor:none;color:transparent;text-shadow:0 0 0 #111;position:absolute;bottom:15px;left:40px;padding-right:10px;height:14px}
 .cli-plugin .input:focus{border:none;outline:none}
 .cli-plugin .input .cursor{
 	content:"";position:absolute;width:8px;top:0;right:0;
