@@ -5,14 +5,33 @@ console.log('%cMADE IN My Computer',"font-weight: bold;font-size:30px;color:gree
 
 console.log("%c"+'Powered By : Yasser BDJ v1.0.0[beta]',"display:inline-block;background-color:#e0005a;color:#ffffff;font-weight:bold;padding:3px 7px 3px 7px;border-radius:3px 3px 3px 3px ;");
 
+//gup:
+function gup( name, url ) {
+    if (!url) url = location.href;
+    name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+    var regexS = "[\\?&]"+name+"=([^&#]*)";
+    var regex = new RegExp( regexS );
+    var results = regex.exec( url );
+    return results == null ? null : results[1];
+}
 
-//Colorscheme:
-var config={
-  textColor:'#f5f5f5',
-  cursorColor:'#f5f5f5',
-  backgroundColor:'#000000',
-};
-
+//c:
+if (gup('c')!="" && gup('c')!=null){
+	var res=gup('c').split(":");
+    //Colorscheme:
+    var config={
+        textColor:'#'+res[0],
+        cursorColor:'#'+res[1],
+        backgroundColor:'#'+res[2],
+    };
+}else{
+    //Colorscheme:
+    var config={
+        textColor:'#f5f5f5',
+        cursorColor:'#f5f5f5',
+        backgroundColor:'#000000',
+    };
+}
 //Init:
 cliPlugin.init(config);
 

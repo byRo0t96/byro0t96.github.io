@@ -6,22 +6,36 @@
         <title>Yasser BDJ - CLI</title>
 		<meta name="theme-color" content="#000000" />
 		<meta name="description" content="Yasser BDJ - Command Line Interface." />
-        <link rel='stylesheet' href='./cli-plugin.min.css'>
 		<link rel="icon" type="image/ico" href="./favicon.ico">
 		<link rel="apple-touch-icon" href="./favicon.ico" />
 		<link rel="manifest" href="./manifest.webmanifest">
+		<script src="./include.js"></script>
+		<script>
+		    include("./loader.css","css");
+		    include("./loader.js","js");			
+		</script>
 		<script src="./index.js" defer></script>
-		
-</head>
-<body>
-<button class="add-button" style=" position: absolute;">Add to home screen</button>
-<div class="version">
-	<div id="framework_version">Powered By : Yasser BDJ v1.0.0[beta]</div>
-	<span id="dot" class="dot dot_green"></span>
-</div>
-<div class="input2">&gt;&gt;&gt;</div>
-  <script src='./cli-plugin.min.js'></script>
-  <script  src="./script.js"></script>
-  <script  src="./check_connection.js"></script>
-</body>
+    </head>
+    <body onload="loader()">
+        <!--loading-->
+        <div id="loading">
+	        <div class="lds-ripple"><div></div><div></div></div>
+	    </div>
+	
+	    <!--content-->
+        <div id="content" style="visibility:hidden;">
+            <div class="version">
+	            <div id="framework_version">Powered By : Yasser BDJ v1.0.0[beta]</div>
+	            <span id="dot" class="dot dot_green"></span>
+            </div>
+    
+	        <div class="input2">&gt;&gt;&gt;</div>
+			<script>
+		        include("./cli-plugin.min.js","js");
+		        include("./script.js","js");
+		        include("./check_connection.js","js");
+		        include("./cli-plugin.min.css","css");			
+		    </script>
+	    </div>
+    </body>
 </html>
