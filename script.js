@@ -56,7 +56,21 @@ cliPlugin.bind('help',function(){
                   '<li><span>clear</span>clear the screen.</li><br>'+
                   '<li><span>help</span>Show this overview.</li>'+
 				  '<li><span>about</span>About Me.</li>'+
+				  '<li><span>ls</span>Programs List.</li>'+
 				  '<li><span>exit</span>Close this window.</li>'+
+				  '</ul>');
+});
+
+//ls:
+cliPlugin.bind('ls',function(){
+  cliPlugin.print('<p>Available Programs:</p>'+
+                  '<ul>'+
+                  '<li><span>ashar :</span><span>Ashar Encryption and decryption.</span></li><br>'+
+                  '<li><span>donotimport :</span><span>A simple package to prevent the abusive use of the import statement in Python.</span></li><br>'+
+				  '<li><span>hexor :</span><span>hexor for color the texts in hex or rgb colors.</span></li><br>'+
+				  '<li><span>hiphp :</span><span>hiphp for control php websites.</span></li><br>'+
+				  '<li><span>pipincluder :</span><span>To import packages if they are found, or download them from pypi if they are not present.This project is in order to bypass errors during importing any package.</span></li><br>'+
+				  '<li><span>easy4py :</span><span>Scripts that help me in my programming life :).</span></li><br>'+
 				  '</ul>');
 });
 
