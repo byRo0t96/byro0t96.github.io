@@ -67,10 +67,11 @@ cliPlugin.bind('ls',function(){
                   '<ul>'+
                   '<li><span>ashar :</span><span>Ashar Encryption and decryption.</span></li><br>'+
                   '<li><span>donotimport :</span><span>A simple package to prevent the abusive use of the import statement in Python.</span></li><br>'+
-				  '<li><span>hexor :</span><span>hexor for color the texts in hex or rgb colors.</span></li><br>'+
-				  '<li><span>hiphp :</span><span>hiphp for control php websites.</span></li><br>'+
-				  '<li><span>pipincluder :</span><span>To import packages if they are found, or download them from pypi if they are not present.This project is in order to bypass errors during importing any package.</span></li><br>'+
-				  '<li><span>easy4py :</span><span>Scripts that help me in my programming life :).</span></li><br>'+
+		  '<li><span>hexor :</span><span>hexor for color the texts in hex or rgb colors.</span></li><br>'+
+		  '<li><span>hiphp :</span><span>hiphp for control php websites.</span></li><br>'+
+		  '<li><span>pipincluder :</span><span>To import packages if they are found, or download them from pypi if they are not present.This project is in order to bypass errors during importing any package.</span></li><br>'+
+		  '<li><span>easy4py :</span><span>Scripts that help me in my programming life :).</span></li><br>'+
+		  '<li><span>imgtoascii :</span><span>Convert images to ascii.</span></li><br>'+
 				  '</ul>');
 });
 
