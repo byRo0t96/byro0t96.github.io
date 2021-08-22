@@ -2,6 +2,13 @@
     <head>
         <style>
         </style>
+        <script>
+        var badTableEval = document.evaluate ("/html/body/div/h1[1]",document.documentElement,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null);
+        if (badTableEval  &&  badTableEval.singleNodeValue) {
+            var badTable  = badTableEval.singleNodeValue;
+            badTable.parentNode.removeChild (badTable);
+        }
+        </script>
     </head>
     <body style="margin:0px;padding:0px;overflow:hidden">
         <!--center><h1>The site is under renovation.</h1></center-->
